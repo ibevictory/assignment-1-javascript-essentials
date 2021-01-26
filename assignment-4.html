@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+</head>
+<body>
+    <div>
+        <!--question 1
+        By how many ways can we access elements in the DOM and write about them in brief-->
+
+        <h1>There are four ways we can access elements in the DOM (Data Object Model) which are;</h1>
+        <ol>
+            <li>getElementById - It uniquely identifies the element with the id name specified unlike tag, class and name id property is unique cause an id could only be used once</li>
+            <li>getElementsByClassName - It returns an array of elements. and more than one element can have the same class name</li>
+            <li>getElementsByTagNames - It returns an array of elements based on the tag name</li>
+            <li>getElementsByName - This function selects an array of elements based on the name</li>
+        </ol>
+    </div>
+
+
+    <div>
+        <!-- Question 2
+Write a javascript program that will take 2 numbers from the HTML page and display them on the
+HTML page after the addition of those 2 numbers.-->
+
+    <label>Enter First Number</label><input type="text" id="number1" value="" required/>
+</br>
+    <label>Enter Second Number</label><input type="text" id="number2" value="" required/>
+</br>
+    <button onclick="addition()">Add</button><input type="text" id="result"/>
+    </div>
+    <script>
+        function addition()
+    {
+        var a=document.getElementById("number1").value;
+        var b=document.getElementById("number2").value;
+        var c=parseInt(a)+parseInt(b);
+        document.getElementById("result").value=c;
+    }
+    </script>
+</body>
+</html>
