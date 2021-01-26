@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+</head>
+<body>
+    <script>
+        // question one
+        // what is the value of clothes[0] and why?
+        const clothes = ['jacket', 't-shirt'];
+        clothes.length = 0;
+        console.log(clothes[0]);  //The value of clothes[0] is undefined because setting the length of clothes array as 0 and so clothes[] will be empty and the clothes[0] is undefined
+
+
+
+        // question two
+        // write a javascript program to find the sum of all the elements in a given array
+
+        var ele = [5, 10, 15, 20, 25, 30, 35, 40];
+        var sum = 0;
+        for(var i=0; i<ele.length;i++){
+            sum+=ele[i];
+        }
+        console.log("the sum of elements in the array is: "+sum);
+    </script>
+</body>
+</html>
